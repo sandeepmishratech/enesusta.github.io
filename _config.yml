@@ -1,56 +1,70 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-show_excerpts: true # set to true to show excerpts on the homepage
+### Site Settings ###
+title               : Enes Usta
+description         : >-                               # >- means to ignore newlines until "url:"
+                      "I Like Java and I turn coffee :coffee: into code,
+                      use tabs over spaces
+                      and never broke production."
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
-plainwhite:
-  name: Enes Usta
-  tagline: Fullstack Developer 
-  date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
+url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
+baseurl             : ""                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
+repository          : YoussefRaafatNasry/portfolYOU    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
+#remote_theme       : YoussefRaafatNasry/portfolYOU    # uncomment this if you are using it as a remote theme
 
-  # generate social links in footer
-  social_links:
-   # twitter: thelehhman
-    github:  enesusta
-    linkedIn: in/enes-usta-9a6918189
-    rss: rss
-    # dribbble: jekyll
-    # facebook: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # linkedin: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
+### Author Info ###
+author:
+  name              : Enes Usta
+  #image             : https://bit.ly/2KCvgVJ
+  image             : https://i.hizliresim.com/r0G4Yz.jpg
+  behance           : your_username
+# dribbble          : your_username
+  email             : enesusta@email.com
+  facebook          : your_username
+  github            : enesusta
+# gitlab            : your_username
+# instagram         : your_username
+  linkedin          : your_username
+  medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+### Pagination ###
+paginate: 6
+paginate_path: "/articles/page-:num/"
 
-# Build settings
-theme: plainwhite
+
+### Posts Permalink ###
+permalink: articles/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
 
 plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+  - jemoji
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
