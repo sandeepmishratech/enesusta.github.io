@@ -58,8 +58,8 @@ defaults:
     values:
       layout: "page"
 
-plugins:
-  - jemoji
+#plugins:
+#  - jemoji
 
 ### Exclude from processing ###
 exclude:
