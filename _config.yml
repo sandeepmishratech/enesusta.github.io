@@ -68,3 +68,6 @@ exclude:
   - LICENSE
   - Gemfile
   - Gemfile.lock
+
+disqus:
+  shortname: disqus_vzK1U2kHqp

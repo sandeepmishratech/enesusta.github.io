@@ -1,11 +1,15 @@
-- name: HTML5/CSS3
-  percentage: 90
+- name: Java
+  percentage: 75
   color: danger
 
-- name: Go
-  percentage: 80
+- name: Spring Framework
+  percentage: 60
   color:
+  
+- name: Spring Boot
+  percentage: 45
+  color: success
 
-- name: Python
-  percentage: 70
+- name: Angular
+  percentage: 50
   color: dark

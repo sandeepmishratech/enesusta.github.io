@@ -1,7 +1,19 @@
-- name: Adobe Photoshop
-  percentage: 95
+- name: Vim
+  percentage: 80
+  color: danger
+
+- name: Object Oriented Design
+  percentage: 60
+  color: success
+
+- name: TDD
+  percentage: 25
   color: info
 
-- name: Adobe Illustrator
-  percentage: 90
-  color: success
+- name: Design Patterns
+  percentage: 45
+  color: black
+
+- name: Regular Expression
+  percentage: 50
+  color: danger
