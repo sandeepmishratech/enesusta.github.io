@@ -87,7 +87,7 @@
   <b>
     
     
-    less than 1 min read time
+    2 mins read time
     
   </b>
 
@@ -108,11 +108,109 @@
 
 </p>
 
-<p>Test</p>
+<h3 id="1">1</h3>
 
-<p>test</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="nc">Optional</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="nc">Animal</span><span class="o">&gt;</span> <span class="nf">getType</span><span class="o">();</span>
+    <span class="nc">String</span> <span class="nf">getAnimalName</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
-<p>est</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Data</span>
+<span class="nd">@AllArgsConstructor</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">DefaultAnimal</span> <span class="kd">implements</span> <span class="nc">Animal</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nc">Optional</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="nc">Animal</span><span class="o">&gt;</span> <span class="nf">getType</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="nc">Optional</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getAnimalName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@AllArgsConstructor</span>
+<span class="nd">@Data</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AnotherAnimal</span> <span class="kd">implements</span> <span class="nc">Animal</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nc">Optional</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="nc">Animal</span><span class="o">&gt;</span> <span class="nf">getType</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="nc">Optional</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getAnimalName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Component</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">C08</span> <span class="kd">implements</span> <span class="nc">Core</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="nc">Animal</span> <span class="n">defaultAnimal</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DefaultAnimal</span><span class="o">(</span><span class="s">"essek"</span><span class="o">);</span>
+        <span class="nc">Animal</span> <span class="n">another</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AnotherAnimal</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span>
+
+        <span class="nc">String</span> <span class="n">first</span> <span class="o">=</span> <span class="n">defaultAnimal</span>
+            <span class="o">.</span><span class="na">getType</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="nl">Animal:</span><span class="o">:</span><span class="n">getAnimalName</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">orElse</span><span class="o">(</span><span class="s">"bilinmiyor"</span><span class="o">);</span>
+        <span class="nc">String</span> <span class="n">sec</span> <span class="o">=</span> <span class="n">another</span>
+            <span class="o">.</span><span class="na">getType</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="nl">Animal:</span><span class="o">:</span><span class="n">getAnimalName</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">orElse</span><span class="o">(</span><span class="s">"bilinmiyor2"</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">first</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">sec</span><span class="o">);</span>
+
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OUTPUT
+=====
+essek
+bilinmiyor2
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Component</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">C08</span> <span class="kd">implements</span> <span class="nc">Core</span> <span class="o">{</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="nc">Animal</span> <span class="n">defaultAnimal</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">DefaultAnimal</span><span class="o">(</span><span class="s">"essek"</span><span class="o">);</span>
+        <span class="nc">Animal</span> <span class="n">another</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">AnotherAnimal</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span>
+
+        <span class="kd">final</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Animal</span><span class="o">&gt;</span> <span class="n">animals</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;(</span><span class="mi">2</span><span class="o">);</span>
+        <span class="n">animals</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">defaultAnimal</span><span class="o">);</span>
+        <span class="n">animals</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">another</span><span class="o">);</span>
+
+        <span class="n">printAllAnimalsName</span><span class="o">(</span><span class="n">animals</span><span class="o">);</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">printAllAnimalsName</span><span class="o">(</span><span class="kd">final</span> <span class="nc">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="nc">Animal</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">list</span>
+            <span class="o">.</span><span class="na">stream</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="nl">Animal:</span><span class="o">:</span><span class="n">getAnimalName</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">::</span><span class="n">println</span><span class="o">);</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
 
 
 </div>
