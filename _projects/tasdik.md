@@ -6,12 +6,11 @@ description: Tasdik is bean validation library for core Java / Spring etc.
 external_url: 
 ---
 
-#### What is Tasdik
+##### What is Tasdik
 
 *Tasdik* means "validation" in **Turkish** language. 
 
-#### What does Tasdik offer?
-
+##### Why would you want to use Tasdik
 There is hundred of validation library in Java. 
 
 For example:
@@ -114,6 +113,7 @@ If you want to use hibernate validation, you have to import all of these depende
 ```
 
 
+#### What does Tasdik offer?
 
 
 
