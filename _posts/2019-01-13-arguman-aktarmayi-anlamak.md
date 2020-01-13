@@ -3,7 +3,7 @@ title: Java'da Argüman Aktarmayı Anlamak
 tags: [Java]
 style: 
 color: 
-description:
+description: hey
 ---
 
 ## Java'da Argüman Aktarmayı Anlamak
@@ -39,11 +39,8 @@ int a = 10;
 p = &a;
 ```
 
-![pointer-table](pointer.jpg) 
 
 {% include elements/figure.html image="https://i.hizliresim.com/864AV1.jpg" caption="Ilgili tablo Şadi Evren Şeker hocamızın sitesinden alınmıştır" %}
-
-*Ilgili tablo Sadi Evren Şeker hocamızın sitesinden alınmıştır*
 
 
 **a** adlı integer değişkeninin sakladığı değer 10'dur. Bellekteki adreslemesi A116 adlı noktaya denk gelmektedir.
