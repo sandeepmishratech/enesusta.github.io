@@ -1,19 +1,39 @@
 - name: Vim
-  percentage: 80
+  percentage: 70
   color: danger
 
 - name: Object Oriented Design
   percentage: 60
-  color: success
+  color: dark 
 
-- name: TDD
-  percentage: 25
-  color: info
+- name: Git
+  percentage: 55
+  color: danger 
+
+- name: Data Structures
+  percentage: 50
+  color: secondary
+
+- name: Linux Sysadmin
+  percentage: 50
+  color:
+
+- name: TeX
+  percentage: 50
+  color:
+
+- name: Bash Scripting
+  percentage: 50
+  color: warning
 
 - name: Design Patterns
   percentage: 45
   color: black
 
-- name: Regular Expression
-  percentage: 50
+- name: TDD
+  percentage: 35
+  color: info
+
+- name: Regex
+  percentage: 25
   color: danger

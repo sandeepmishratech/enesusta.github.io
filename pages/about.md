@@ -18,9 +18,8 @@ Merhabalar. Trakya Üniversitesinde Bilgisayar Mühendisliği okumaktayım. Takr
 {% include about/timeline.html %}
 </div>
 
----
 
-</br>
+<br/>
 
 Buda dursun burada;
 

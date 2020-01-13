@@ -1,15 +1,40 @@
-- name: Java
+- name: Java SE
   percentage: 75
   color: danger
 
 - name: Spring Framework
-  percentage: 60
-  color:
-  
-- name: Spring Boot
-  percentage: 45
-  color: success
+  percentage: 65
+  color: dark 
 
 - name: Angular
+  percentage: 60
+  color: warning 
+
+- name: JDBC
+  percentage: 55
+  color: secondary 
+
+- name: MySQL
   percentage: 50
-  color: dark
+  color: danger
+
+- name: Maven
+  percentage: 50
+  color: secondary 
+
+- name: Bulma
+  percentage: 45
+  color: warning
+
+- name: Typescript
+  percentage: 40
+  color: info
+
+- name: Docker 
+  percentage: 30
+  color:  
+
+- name: SCSS
+  percentage: 25
+  color: danger
+

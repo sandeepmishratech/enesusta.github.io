@@ -39,15 +39,12 @@ int a = 10;
 p = &a;
 ```
 
-
 {% include elements/figure.html image="https://i.hizliresim.com/864AV1.jpg" caption="Ilgili tablo Şadi Evren Şeker hocamızın sitesinden alınmıştır" %}
 
 
 **a** adlı integer değişkeninin sakladığı değer 10'dur. Bellekteki adreslemesi A116 adlı noktaya denk gelmektedir.
 
 Programın çalışması sırasında bir başka değişkenin işaret ettiği adres bölgesi A116 olduğu sürece **a** değişkeni içindeki 10' değerine erişebiliriz. Pointer özetle budur.
-
-
 
 
 ### Heap
