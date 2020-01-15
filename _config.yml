@@ -1,9 +1,7 @@
 ### Site Settings ###
 title               : /home/enes
 description         : >-                               # >- means to ignore newlines until "url:"
-                      "I Like Java and I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production."
+                      "Computer science is no more about computers than astronomy is about telescopes." - Edsger W. Dijkstra
 
 url                 : "https://enesusta.tech"                               # base hostname & protocol for your site (e.g. http://example.com)
 baseurl             : ""                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
@@ -14,7 +12,8 @@ repository          : enesusta    # repository metadata on GitHub Pages [know mo
 author:
   name              : Enes Usta
   #image             : https://bit.ly/2KCvgVJ
-  image             : https://i.hizliresim.com/r0G4Yz.jpg
+  #image             : https://i.hizliresim.com/r0G4Yz.jpg
+  image             : https://miro.medium.com/max/5614/1*wC_Gs8AVdTkwL0dVq9asvA.jpeg
 #  behance           : ""
 # dribbble          : your_username
   email             : enesusta@email.com
