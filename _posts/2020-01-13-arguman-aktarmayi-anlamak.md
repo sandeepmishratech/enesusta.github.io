@@ -1,8 +1,8 @@
 ---
 title: Java'da Argüman Aktarmayı Anlamak
-tags: [Java]
-style: 
-color: 
+tags: [java]
+style: fill
+color: secondary
 description: hey
 ---
 

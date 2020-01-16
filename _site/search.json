@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "Java&#39;da Argüman Aktarmayı Anlamak",
+      "category" : "",
+      "tags"     : "java",
+      "url"      : "/articles/arguman-aktarmayi-anlamak",
+      "date"     : "2020-01-13 00:00:00 +0300"
+    } ,
+  
+    {
+      "title"    : "JVM Üzerinde Native Kod Koşturmak",
+      "category" : "",
+      "tags"     : "jvm, gcc",
+      "url"      : "/articles/jni-ve-log",
+      "date"     : "2019-12-24 00:00:00 +0300"
+    } ,
+  
+    {
       "title"    : "Digital Minimalism",
       "category" : "",
       "tags"     : "Social Media, Minimalism, Technology",
@@ -14,14 +30,6 @@
       "tags"     : "React, JavaScript, Web Development",
       "url"      : "/articles/learn-react-js",
       "date"     : "2019-02-15 00:00:00 +0300"
-    } ,
-  
-    {
-      "title"    : "Java&#39;da Argüman Aktarmayı Anlamak",
-      "category" : "",
-      "tags"     : "Java",
-      "url"      : "/articles/arguman-aktarmayi-anlamak",
-      "date"     : "2019-01-13 00:00:00 +0300"
     } ,
   
     {
