@@ -3,7 +3,7 @@ title: Java'da Argüman Aktarmayı Anlamak
 tags: [java]
 style: fill
 color: secondary
-description: hey
+description: Argüman aktarmayı anlayın.
 ---
 
 ## Java'da Argüman Aktarmayı Anlamak

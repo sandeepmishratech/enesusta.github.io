@@ -14,38 +14,6 @@
       "tags"     : "jvm, gcc",
       "url"      : "/articles/jni-ve-log",
       "date"     : "2019-12-24 00:00:00 +0300"
-    } ,
-  
-    {
-      "title"    : "Digital Minimalism",
-      "category" : "",
-      "tags"     : "Social Media, Minimalism, Technology",
-      "url"      : "/articles/digital-minimalism",
-      "date"     : "2019-02-21 00:00:00 +0300"
-    } ,
-  
-    {
-      "title"    : "Learn React.js in 5 minutes",
-      "category" : "",
-      "tags"     : "React, JavaScript, Web Development",
-      "url"      : "/articles/learn-react-js",
-      "date"     : "2019-02-15 00:00:00 +0300"
-    } ,
-  
-    {
-      "title"    : "Java Generics",
-      "category" : "",
-      "tags"     : "Java, Spring Boot",
-      "url"      : "/articles/generics",
-      "date"     : "2018-12-15 00:00:00 +0300"
-    } ,
-  
-    {
-      "title"    : "UNIX - Find command",
-      "category" : "",
-      "tags"     : "External Post, Git",
-      "url"      : "/articles/how-to-undo-your-git-failure",
-      "date"     : "2015-09-25 00:00:00 +0300"
     } 
   
 ]
