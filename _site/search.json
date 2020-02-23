@@ -22,6 +22,14 @@
       "tags"     : "java",
       "url"      : "/articles/arguman-aktarmayi-anlamak",
       "date"     : "2020-01-13 00:00:00 +0300"
+    } ,
+  
+    {
+      "title"    : "Bilgisayar dünyasına dair içerikler",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/articles/ise-yarar-siteler",
+      "date"     : "2019-10-27 00:00:00 +0300"
     } 
   
 ]
