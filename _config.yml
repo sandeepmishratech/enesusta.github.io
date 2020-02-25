@@ -1,28 +1,28 @@
 ### Site Settings ###
-title               : /home/enes
-description         : >-                               # >- means to ignore newlines until "url:"
-                      "Computer science is no more about computers than astronomy is about telescopes." - Edsger W. Dijkstra
+title: /home/enes
+description: >- # >- means to ignore newlines until "url:"
+  "Computer science is no more about computers than astronomy is about telescopes." - Edsger W. Dijkstra
 
-url                 : "https://enesusta.tech"                               # base hostname & protocol for your site (e.g. http://example.com)
-baseurl             : ""                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
-repository          : enesusta    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
+url: "https://enesusta.tech" # base hostname & protocol for your site (e.g. http://example.com)
+baseurl: "" # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
+repository: enesusta # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
 #remote_theme       : YoussefRaafatNasry/portfolYOU    # uncomment this if you are using it as a remote theme
 
 ### Author Info ###
 author:
-  name              : Enes Usta
+  name: Enes Usta
   #image             : https://bit.ly/2KCvgVJ
   #image             : https://i.hizliresim.com/r0G4Yz.jpg
-  image             : https://miro.medium.com/max/5614/1*wC_Gs8AVdTkwL0dVq9asvA.jpeg
-#  behance           : ""
-# dribbble          : your_username
-  email             : enesusta@email.com
-  facebook          : enes.usta.10441
-  github            : enesusta
-# gitlab            : your_username
-# instagram         : your_username
-  linkedin          : enes-usta-9a6918189
-# medium            : 
+  image: https://miro.medium.com/max/5614/1*wC_Gs8AVdTkwL0dVq9asvA.jpeg
+  #  behance           : ""
+  # dribbble          : your_username
+  email: enesusta@email.com
+  facebook: enes.usta.10441
+  github: enesusta
+  # gitlab            : your_username
+  # instagram         : your_username
+  linkedin: enes-usta-9a6918189
+# medium            :
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
@@ -32,22 +32,18 @@ author:
 # vimeo             : your_username
 # youtube           : your_channel_name
 
-
 ### Pagination ###
 paginate: 6
 paginate_path: "/articles/page-:num/"
 
-
 ### Posts Permalink ###
 permalink: articles/:title
-
 
 ### Collections ###
 collections:
   projects:
     output: true
     permalink: /projects/:name
-
 
 ### Defaults for collections ###
 defaults:
