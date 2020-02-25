@@ -4,6 +4,7 @@ tags: [go, docker]
 style: fill
 color: info
 description: Docker hakkında.
+comments: true
 #external_url: https://blog.usejournal.com/how-to-undo-your-git-failure-b76e31ecac74
 ---
 

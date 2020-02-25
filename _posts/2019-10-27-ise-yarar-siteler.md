@@ -4,6 +4,7 @@ tags:
 style: fill
 color: warning 
 description: Güncelleme yapılacaktır.
+comments: false
 #external_url: https://blog.usejournal.com/how-to-undo-your-git-failure-b76e31ecac74
 ---
 
