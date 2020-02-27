@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Git nedir?",
+      "category" : "",
+      "tags"     : "git, unix",
+      "url"      : "/articles/git-ve-version-kontrol-sistemlerine-dair-egitim",
+      "date"     : "2020-02-27 00:00:00 +0300"
+    } ,
+  
+    {
       "title"    : "Docker nedir?",
       "category" : "",
       "tags"     : "go, docker",
