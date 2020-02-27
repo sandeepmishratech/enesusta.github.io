@@ -173,6 +173,201 @@ git config --global core.editor "code --wait"
 ```
 
 
+### Git Kontrol Akışı
+
+VCS'in en temel bileşeni **repository** ismini verdiğimiz yapıdır.
+
+Repository
+- dosyalarınızdaki tüm değişiklikleri
+- bu değişiklikler ile ilgili ilave bilgileri 
+  - değişikliği kim
+  -  ne zaman yaptı 
+  -  değişiklik ile ilgili girilen açıklamalar)
+
+ayrı birer versiyon olarak kayıt altında tutan bir veri tabanıdır.
+
+Git tüm bu bilgileri genellikle dosya sisteminde gizli bir klasör olarak oluşturulan **.git** isimli klasör içinde bir dizi dosya olarak tutar.
+
+#### Nasıl Repository Oluşturacağım?
+
+İki yolu var;
+
+- `git init` komutunu kullanmak.
+- `git clone` ile **git sunucusundaki** projeyi bilgisayarımıza indirmek.
+
+
+Daha sonrasında;
+
+Varsayalım ki, yapmış olduğumuz değişiklikler istediğimiz noktaya ulaştı yahut tamamlandı. Bu noktada **değişikliklerimizi** `commit` adı verilen bir bütün olarak tarif etmeliyiz.
+
+Böylece projemizin yeni bir versiyonunu oluşturma işleminin ilk adımını tamamlamış olacağız.
+
+#### Commit'ten önce
+
+Yapmış olduğumuz değişikliklerin bir özetini görüntülemek isteyebiliriz.
+
+- Doğru dosyayı mı düzenledik?
+- Yanlışlıkla bir dosyayı sildik mi, silmedik mi?
+- Olmaması gereken bir dosyayı ekledik mi, eklemedik mi? gibi.
+
+`git status` komutu ile bu işlemi yerine getirebiliriz.
+
+Bir sonraki aşamada değişen dosyalarımızdan hangilerinin **commit'e** dahil olup olmayacağını belirlememiz gerekiyor.
+
+#### Staging Area (Depolama Bölgesi)
+
+##### Eklemek
+
+Bu adımda, **commit'e** dahil etmek istediğimiz dosyaları **stating area** denilen bir tampon bölgeye alırız.
+
+Bu noktada ufak bir not;
+
+- Dosyaların içeriği değişmiş değişmemiş
+- Yeni dosya eklenmiş eklenmemiş
+
+Bu dosyaların otomatik olarak **stating area'ya** eklenmenmesini sağlamaz. Bu işlem ile ilgili dosyaları seçerek biz bunu yapmalıyız.
+
+
+Dosyalarımızı `git add . veya git add dosya-ismi.uzantisi` ile **stating area'ya** alabiliriz.
+
+
+##### Çıkartmak
+
+git add komutu ile **stating area'ya** aldığım bir değişikliği
+
+```bash
+git reset HEAD "dosya uzantisi"
+```
+
+komutu ile stating area'dan çıkartabilirim.
+
+```bash
+git rm -f “dosya uzantısı”
+```
+
+Dosyayı projeden tamamen silmiş olacağız.
+
+---
+
+Dosyalarımızı **stating area'ya** ekledikten sonra şimdi **commit** işlemine hazırız.
+
+#### Git Commit
+
+##### Düzenleme
+
+Commit işlemini iki şekilde yapabiliyoruz; 
+
+- `git commit -m "Committed message"`
+- `git commit`
+
+Birinci şekli ile kullanırsanız herhangi bir metin editörüne ihtiyaç duymaksızın 
+komut satırı üzerinden commit işlemini tamamlayabilirsiniz.
+
+İkinci şekilde ise metin editörü üzerinden yapacağız bu işi.
+
+Commit ile dosyalarımızdaki değişiklikler; yeni bir versiyon olarak **Git'de** kayıt altına alınır.
+
+Ekstra bilgiler:
+
+- `git commit -amend -m “commit mesajı”
+`
+
+Son commit mesajını değiştirebiliriz.
+
+##### Commitleri geri almak
+
+- `git reset -hard`
+
+Projede yapılan tüm değişiklikleri silip ve son commit edilen noktaya geri getirebiliriz.
+
+- ` git reset [hash değerinin ilk 7 karakteri]`
+
+Commitlediğimiz değişiklikleri geri almamızı sağlar. Bu işlemi yeni bir commit oluşturmadan yapar.
+
+- ` git revert [hash değerinin ilk 7 karakteri]`
+
+Commitlediğimiz bir değişikliği geri alırken projemizin tarihçesinden atmış olduğumuz commit’i silmez ve değiştirme işlemini yeni bir commit atarak gerçekleştirir.
+
+Son işlem;
+
+#### Git push
+
+
+{% include elements/figure.html image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbI4MeBe_XLWbK2D2lLljn39dSBama4qOpDo5XLYl2pzhmsVHK" caption="Evde denemeyin." %}
+
+- Değişiklikleri **stating area'ya aldık**
+- Bu değişiklikleri commit ettik.
+- `git push -u origin master` diyerek uzak repository'e yolluyoruz.
+
+
+{% include elements/figure.html image="https://miro.medium.com/max/738/0*qmLRym9jZf4KJf--.jpg" caption="Git Workflow" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
