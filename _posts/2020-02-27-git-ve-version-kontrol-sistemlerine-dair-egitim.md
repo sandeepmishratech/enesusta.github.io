@@ -290,7 +290,7 @@ Commitlediğimiz bir değişikliği geri alırken projemizin tarihçesinden atm�
 
 Son işlem;
 
-#### Git push
+#### Git Push
 
 
 {% include elements/figure.html image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbI4MeBe_XLWbK2D2lLljn39dSBama4qOpDo5XLYl2pzhmsVHK" caption="Evde denemeyin." %}
@@ -303,35 +303,93 @@ Son işlem;
 {% include elements/figure.html image="https://miro.medium.com/max/738/0*qmLRym9jZf4KJf--.jpg" caption="Git Workflow" %}
 
 
+### Git Branch
+
+
+Git **ağaç mantığı** ile çalışmaktadır.
+
+Bir projeyi versiyonlamak istediğimizde git otomatik olarak master branch’ini oluşturur ve biz bu branch üzerinde çalışmaya başlamış oluruz.
+
+
+{% include elements/figure.html image="https://miro.medium.com/max/3508/1*tnvRls6Dg7vFt0zGdtfu_w.png" caption="Git Branch Workflow" %}
 
 
 
 
+> Neden branch'a gerek duyuyoruz?
+
+- `git branch branchadı`
+ 
+Bulunduğumuz branch’den yeni bir branch çıkabiliriz.
+
+- `git branch`
+
+Projedeki local branchleri görebiliriz.
+
+- `git branch -v`
+
+Projedeki local branchleri son commit bilgisi ile görebiliriz.
+
+- `git branch -va`
+
+Local’deki ve remote’daki branchleri liste halinde son commit bilgileri ile görebiliriz.
+
+- `git checkout branchadı` komutuyla branch’ler arasında geçiş yapabiliriz.
 
 
+Oluşturduğumuz branch’lerle işimiz bittiğinde veya başka bir nedenden dolayı bu branch’leri silmek isteyebiliriz. Local’deki bir branch’i silmek istersek
+
+- `git branch -d branchadı` komutunu kullanabiliriz.
+
+Silmek istediğimiz branch remote repository de ise
+
+- `git push -d <remote_name> <branch_name>`
 
 
+### Git Fetch
+
+komutunu kullanarak **başka biri tarafından** değişiklik yapılıp yapılmadığına bakmamız gerekecektir. 
+
+Projede aynı branch üzerinde çalıştığımız takım arkadaşlarımız var ise geliştirme yapmaya başlamadan önce bu komut yardımıyla `remote branch’deki tüm değişiklikleri local branch’imize almamız gerekir.`
+
+Özetle;
+
+Önce **git fetch** ile değişiklikleri çekiyoruz local repomuza.
+
+**git diff** ile iki versiyon arasındaki farkları inceliyoruz.
+
+Sorun yok ise, **git pull** ile workspace'e alıyoruz.
+
+### Git Fetch vs Git Pull
+
+Git fetch öncelikle değişiklikleri local repoya çeker fakat workspace' çekmez, **git diff** komutu ile kontrolü bize bırakır.
+
+**Git pull** ise, doğrudan değişiklikleri local repoya alıp **commit'ler** böylece değişiklikler doğrudan workspace'e eklenir.
+
+### Git Rebase ve Git Merge
+
+init yahut clone komutu kullanın,
+
+ilk branch daima **master'dır.**
+
+**develop** branch'ı üzerinden geliştirme yapmaya başladığımda, bir noktada bu iki **branch'i** birleştirmek gerekiyor ki, yapmış olduğumuz tüm değişiklikleri **master branch'imde** görebilelim.
+
+Bu işlemi gerçekleştirmek için dikkat etmemiz gereken tek bir nokta var.
+
+Master branch’imden **development** branch’imi çıktıktan sonra bu branch’de herhangi bir değişiklik olup olmadığıdır.
 
 
+{% include elements/figure.html image="https://miro.medium.com/max/1634/1*CePupxHsxULxsab4iV1AEQ.png" caption="Git Branch Workflow" %}
 
+Master branch’imde herhangi bir değişiklik olmadıysa yani bu branch’in son commit’i ve development branch ile ortak commit’i aynı ise git;
+- **git rebase** ile bu branch’i master ile birleştirebilirim.
 
+**git checkout master** komutu ile master branch’ini head yapıyoruz. Daha sonrada **git rebase develop** komutu ile 
+- master branch’ine develop branch’inin tüm tarihçesini aktarmış oluyoruz.
 
+Develop branch’indeki tüm değişiklikler **artık master branch’imizdede** bulunuyor.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% include elements/figure.html image="https://miro.medium.com/max/1736/1*YCUqtQ-Guqens9wzRaVfDw.png" caption="Git Branch Workflow" %}
 
 
 
