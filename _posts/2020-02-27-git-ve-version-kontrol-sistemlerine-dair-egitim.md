@@ -8,6 +8,9 @@ comments: true
 #external_url: https://blog.usejournal.com/how-to-undo-your-git-failure-b76e31ecac74
 ---
 
+Bu yazı ve notlar **28 Şubat 2020** tarihinde Trakya Üniversitesi Bilgisayar Mühendisliği **Software Craftsmanship** topluluğu tarafından daha nitelikli mühendisler olabilmek gayesi güden öğrenciler tarafından düzenlenmiş ve gerçekleştirilmiştir.
+
+
 #### Versiyon nedir?
 
 İnsanoğlu yazıyı keşfetmeden önce dahi mağara duvarlarına resimler yaparak düşüncelerini somutlaşma eğiliminde olagelmişlerdir. Bilinen tarihe göre ilk yazı **Sümerliler** tarafından **İsa'dan önce 3500 civarlarında icat edildi.**  
@@ -391,8 +394,16 @@ Develop branch’indeki tüm değişiklikler **artık master branch’imizdede**
 
 {% include elements/figure.html image="https://miro.medium.com/max/1736/1*YCUqtQ-Guqens9wzRaVfDw.png" caption="Git Branch Workflow" %}
 
+---
 
 
+Vermiş olduğum eğitime dair fotoğraflar:
+
+{% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/28-02-2020-tarihli-git-egitimi/git-egitimi-1.jpeg" caption="Eğitimden #1" %}
+
+
+
+{% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/28-02-2020-tarihli-git-egitimi/git-egitimi-2.jpeg" caption="Eğitimden #2" %}
 
 
 
