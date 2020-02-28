@@ -399,7 +399,7 @@ Develop branch’indeki tüm değişiklikler **artık master branch’imizdede**
 
 Vermiş olduğum eğitime dair fotoğraflar:
 
-{% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/28-02-2020-tarihli-git-egitimi/git-egitimi-1.jpeg" caption="Eğitimden #1" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/28-02-2020-tarihli-git-egitimi/git-egitimi-1.jpeg" caption="Okulumuzun sonsuz kaynakları VGA çıkışı için 30 CM uzunlukta bir kablo verdiği için kürsü üzerinden bağlayamadık. Onur arkadaşımızın HDMI kablosu ile doğrudan bağlamak zorunda kaldık. Gör bunları rektörlük." %}
 
 
 
