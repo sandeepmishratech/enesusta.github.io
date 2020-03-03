@@ -33,6 +33,8 @@ cd repository-to-pdf
 
 {% include elements/video.html id="rCwVeEPhJ1o" %}
 
+If you can view the pdf just click the button.
+
 {% include elements/button.html link="https://enesusta.tech/assets/pdf/js.pdf" text="View PDF" style="outline-dark" %}
 
 
