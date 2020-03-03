@@ -149,6 +149,8 @@ Bu da demek oluyor ki; **attempt.txt**'nin kullanıcısı bu dosyaya;
 
 Dosya ve dizin haklarını **chown, chgrp** ve **chmod** komutları ile düzenleyebiliriz.
 
+---
+
 ##### chown (change ownership)
 
 
