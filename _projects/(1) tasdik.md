@@ -1,7 +1,8 @@
 ---
-name: tasdik
+name: Tasdik
+title: Tasdik
 tools: [Java]
-image:
+image: https://beanvalidation.org/logo/logo.svg
 description: Tasdik is bean validation library for core Java / Spring etc.
 external_url: 
 ---
