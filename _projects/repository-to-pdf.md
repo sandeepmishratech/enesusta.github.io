@@ -29,7 +29,9 @@ cd repository-to-pdf
 
 {% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/projects/repository-to-pdf/repository-to-pdf.gif" caption="Repository to PDF" %}
 
+#### You can watch this to understand how to use it
 
+{% include elements/video.html id="rCwVeEPhJ1o" %}
 
 {% include elements/button.html link="https://enesusta.tech/assets/pdf/js.pdf" text="View PDF" style="outline-dark" %}
 
