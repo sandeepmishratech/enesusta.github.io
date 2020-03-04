@@ -57,6 +57,7 @@ Görselleştirir isek;
 
 belirtir.
 
+---
 
 Bu örnek için birinci bölgemiz.
 
@@ -177,39 +178,90 @@ chown -R enes /bin
 
 Daha ayrıntılı bilgi için:
 
-https://linux.die.net/man/2/chown
+{% include elements/button.html link="https://linux.die.net/man/2/chown" text="Man page of chown" style="outline-dark" %}
+
+---
+
+##### chgrp (change group)
+
+**chgrp** dosya ya da dizinin grubunu değiştirmek için kullanılır. Komutun genel yapısı;
+
+`chrp <grup adi|grup kodu>  <dosya/dizin adi>`
+
+##### chmod
+
+Dosya ya da dizin haklarını belirlemek için kullanılır. İki ayrı kullanım şekli vardır.
+
+-  Karakter ile kullanımı:
+
+Aşağıdaki karakter bileşenleri kullanılarak izin hakları belirlenebilir
 
 
-{% include elements/button.html link="https://github.com" text="GitHub" style="outline-dark" %}
+{% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/linux-file-system-permissions/permission3.png" caption="İnceleyiniz" %}
 
 
+Bir takım örnekler:
+
+```bash
+root@c3c800b5943a:/# chmod u+rw /home
+```
+
+Terminal üzerinde aktif bulunan kullanıcıya **bu örnek için root** `/home` dizini üzerinde okuma ve yazma izni verir.
 
 
+```bash
+root@c3c800b5943a:/# chmod g-w /home
+```
+
+Gruptan **yazma** hakkını alır.
+
+```bash
+root@c3c800b5943a:/# chmod go+x some_executable_file.sh
+```
+
+Grup ve diğerlerine ilgili dosyayı çalıştırma izni verir.
 
 
+- Sayısal kullanımı:
+
+Hakların sayısal karşılıkları şu şekildedir:
+
+- r:4 
+- w:2
+- x:1
+
+Buna göre;
+{% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/linux-file-system-permissions/permission4.png" caption="" %}
+
+```bash
+root@c3c800b5943a:/# chmod 700 some_executable_file.sh
+```
+
+{% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/linux-file-system-permissions/permission5.png" caption="" %}
+
+Kullanıcının tüm hakları var, grubun ve diğerlerinin izni yok.
 
 
+```bash
+root@c3c800b5943a:/# chmod 755 /home
+```
+
+{% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/linux-file-system-permissions/permission6.png" caption="" %}
+Kullanıcının **tüm hakları** var, grubun ve diğerlerinin `okuma-çalıştırma` hakkı var.
 
 
+```bash
+root@c3c800b5943a:/# chmod 640 /home/project-list.txt
+```
+
+{% include elements/figure.html image="https://raw.githubusercontent.com/enesusta/assets-host-for-github-pages/assets/linux-file-system-permissions/permission7.png" caption="" %}
+
+Kullanıcının okuma-yazma hakkı var, grubun **okuma** hakkı var, diğerlerinin ise izni yok.
 
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Yazı üzerinde kullanılan örneklerin bir kısmı **Selçuk Han AYDIN** tarafından ODTÜ Bilgi İşlem Dairesi bünyesinde bulunan Kullanıcı Destek Grubu tarafından hazırlanan 2002 basım tarihli kitaptan alınmıştır. 
 
 
 
