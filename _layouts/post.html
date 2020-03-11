@@ -18,7 +18,6 @@ layout: page
   <br>
 
 
-  {% if page.lang == "en" %}
     {% if page.tags != empty %}
     Tags:
     {% for tag in page.tags %}
@@ -27,8 +26,9 @@ layout: page
     </a>
     {% endfor %}
     {% endif %}
-  {% endif %}
 
+    <br>
+{% comment %}
   {% if page.lang == "tr" %}
     {% if page.tags != empty %}
     Etiketler:
@@ -39,7 +39,7 @@ layout: page
     {% endfor %}
     {% endif %}
   {% endif %}
-
+{% endcomment %}
 
 </p>
 
