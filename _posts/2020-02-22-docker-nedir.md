@@ -5,6 +5,7 @@ style: fill
 color: info
 description: Docker hakkında.
 comments: true
+lang: tr
 #external_url: https://blog.usejournal.com/how-to-undo-your-git-failure-b76e31ecac74
 ---
 
