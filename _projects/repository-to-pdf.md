@@ -5,6 +5,7 @@ tools: [Bash]
 image: https://cdn.devdojo.com/posts/images/June2019/executing-bash-script-on-multiple-remote-server.jpg?auto=compress&w=960&dpr=2
 description: Convert open source projects to pdf
 external_url: 
+weight: 3
 ---
 
 #### Requirements

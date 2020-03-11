@@ -5,6 +5,7 @@ tools: [Java]
 image: https://beanvalidation.org/logo/logo.svg
 description: Tasdik is bean validation library for core Java / Spring etc.
 external_url: 
+weight: 1
 ---
 
 ##### What is Tasdik

@@ -5,6 +5,7 @@ tools: [Java, SOAP]
 image: https://www.flowgear.net/wp-content/uploads/2019/03/soap-request.png
 description: Turkish citizen validator uses SOAP protocol to validate turkish citizen ID number.
 external_url: 
+weight: 2
 ---
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.enesusta/turkish-citizen-validator?color=red&style=flat-square)](http://search.maven.org/artifact/com.github.enesusta/turkish-citizen-validator)
