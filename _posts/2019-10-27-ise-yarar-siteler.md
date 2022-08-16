@@ -186,6 +186,7 @@ Destek olmak isterseniz, lütfen [repoyu](https://github.com/enesusta/ise-yarar-
 12. [DataStructures and Algorithyms](https://www.programiz.com/dsa)
 13. [Online Tutorials For Eveything](https://www.tutorialspoint.com)
 14. [Foreign Language Education](https://tr.duolingo.com/)
+15. [Data Structures and Algorithms Tutorial](https://www.scaler.com/topics/data-structures/)
 
 ## Gereksiz ama eglenceli
 
